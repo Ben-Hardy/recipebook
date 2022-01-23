@@ -2,10 +2,38 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Recipes from './routes/recipes'
+import Recipe from './routes/recipe'
+
+const rootElement = document.getElementById('root')
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-)
+	<BrowserRouter>
+		<Routes>
+			<Route path="/" element={<App />} />
+			<Route path="/recipes" element={<Recipes />}>
+				<Route
+					index
+					element={
+						<main style={{ padding: "1rem"}}>
+							<p>Pick a recipe!</p>
+						</main>
+					}/>
+				
+			</Route>
+			<Route path="/recipes/:recipeSlug" element={<Recipe />} />
+
+			<Route
+				path="*"
+				element={
+					<main style={{ padding: "1rem"}}>
+						<p>There's nothing here!</p>
+					</main>
+				}
+			/>
+
+		</Routes>
+	</BrowserRouter>,
+	rootElement
+);
