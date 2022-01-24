@@ -3,21 +3,16 @@ import { Outlet, useLocation } from "react-router-dom"
 import NavBar from "./components/NavBar"
 import './App.css'
 import Home from './routes/home';
+import Footer from './components/Footer';
 
-function App() {
-	let useLoc = useLocation();
-	console.log(useLoc.pathname);
+export default function App() {
 	return (
-		<div
-			style={{
-				padding: "1rem"
-			}}
+		<div className="App"
 		>
 			<NavBar />
 			<Outlet />
+			<Footer />
 		</div>
 		
 	)
 }
-
-export default App

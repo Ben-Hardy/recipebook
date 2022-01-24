@@ -1,8 +1,11 @@
 export default function Home() {
 	return (
-	<p>
-		Welcome to Ben's Recipe Book.
-	</p>
+		<div className="Home">
+			<p>
+				Welcome to Ben's Recipe Book.
+			</p>
+		</div>
+
 	)
 
 }

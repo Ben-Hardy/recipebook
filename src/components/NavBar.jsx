@@ -3,13 +3,9 @@ import { Link } from "react-router-dom";
 
 export default function NavBar() {
 	return (
-		<div>
+		<div className="NavBar">
 			<h1>RecipeBook</h1>
-				<nav 
-				style={{
-					borderBottom: "solid 1px",
-					paddingBottom: "1rem"
-				}}>
+				<nav >
 					<Link to="/">Home</Link> | {" "}
 					<Link to="/recipes">Recipes</Link>
 				</nav>

@@ -1,5 +1,4 @@
 import { NavLink, Outlet, useSearchParams } from "react-router-dom"
-import NavBar from "../components/NavBar";
 
 import { getRecipes } from "../recipe_data"
 
@@ -7,29 +6,20 @@ export default function Recipes() {
 	let recipes = getRecipes();
 
 	return (
-		<div>
-			
-			<div style={{ display: "flex"}}>
-				<nav style={{
-					
-					padding: "1rem"
-				}}>
+
+			<div>
+				<nav className={"Recipes"}>
 					
 					{recipes.map(recipe => (
-						<NavLink
-						style={({ isActive }) => {
-							return {
-								display: "block",
-								margin: "1rem 0",
-								color: isActive ? "red" : ""
-							};
-						}}
+						<NavLink 
 						to={`/recipes/${recipe.slug}`}
 						key={recipe.slug}
 						>
-							
-							{recipe.name}
-							
+							<div className="RecipePane">
+								<img src={"../img/" + recipe.imageName} className="Image" />
+								<h2>{recipe.name}</h2>
+								<p>{recipe.notes}</p>
+							</div>	
 						</NavLink>
 					)
 						
@@ -37,6 +27,5 @@ export default function Recipes() {
 				</nav>
 				
 			</div>
-		</div>
 	)
 }
