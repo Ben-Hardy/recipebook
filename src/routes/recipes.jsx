@@ -8,7 +8,7 @@ export default function Recipes() {
 
 	return (
 		<div>
-			<NavBar />
+			
 			<div style={{ display: "flex"}}>
 				<nav style={{
 					

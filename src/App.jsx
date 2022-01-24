@@ -1,17 +1,20 @@
 import { useState } from 'react'
-import { Outlet, Link } from "react-router-dom"
+import { Outlet, useLocation } from "react-router-dom"
 import NavBar from "./components/NavBar"
-
 import './App.css'
+import Home from './routes/home';
 
 function App() {
+	let useLoc = useLocation();
+	console.log(useLoc.pathname);
 	return (
-		<div>
+		<div
+			style={{
+				padding: "1rem"
+			}}
+		>
 			<NavBar />
-			<p>
-				Welcome to Ben's Recipe Book.
-			</p>
-			
+			<Outlet />
 		</div>
 		
 	)
