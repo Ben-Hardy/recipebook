@@ -3,6 +3,8 @@ let recipes = [
 		name: "Pancakes",
 		slug: "pancakes",
 		imageName: "pancakes.jpg",
+		altText: "A photo of pancakes",
+		description: "A basic recipe for pancakes",
 		ingredients: [
 			[1, "Cup", "Flour"],
 			[2, "Tbsp", "Baking Powder"],
@@ -22,9 +24,11 @@ let recipes = [
 		notes: "Makes approximately 8 pancakes if using a 1/4 cup measuring cup"
 	},
 	{
-		name: "Pancakes 2",
+		name: "More Pancakes",
 		slug: "pancakes2",
-		imageName: "pancakes.jpg",
+		imageName: "otherpancakes.jpeg",
+		altText: "A photo of pancakes",
+		description: "A basic recipe for pancakes",
 		ingredients: [
 			[1, "Cup", "Flour"],
 			[2, "Tbsp", "Baking Powder"],
@@ -44,9 +48,11 @@ let recipes = [
 		notes: "Makes approximately 8 pancakes if using a 1/4 cup measuring cup"
 	},
 	{
-		name: "Pancakes 3",
-		slug: "pancakes3",
-		imageName: "pancakes.jpg",
+		name: "Bagels",
+		slug: "bagels",
+		imageName: "bagels.jpeg",
+		altText: "A photo of pancakes",
+		description: "A simple recipe to make bagels without kneading",
 		ingredients: [
 			[1, "Cup", "Flour"],
 			[2, "Tbsp", "Baking Powder"],
@@ -66,9 +72,11 @@ let recipes = [
 		notes: "Makes approximately 8 pancakes if using a 1/4 cup measuring cup"
 	},
 	{
-		name: "Pancakes 4",
-		slug: "pancakes4",
-		imageName: "pancakes.jpg",
+		name: "Banana Bread",
+		slug: "bananabread",
+		imageName: "bananabread.jpeg",
+		altText: "A photo of banana bread",
+		description: "A banana bread recipe that doesn't use lots of fancy ingredients",
 		ingredients: [
 			[1, "Cup", "Flour"],
 			[2, "Tbsp", "Baking Powder"],
@@ -88,9 +96,11 @@ let recipes = [
 		notes: "Makes approximately 8 pancakes if using a 1/4 cup measuring cup"
 	},
 	{
-		name: "Pancakes 5",
-		slug: "pancakes5",
-		imageName: "pancakes.jpg",
+		name: "Roasted Chicken",
+		slug: "roastedchicken",
+		imageName: "chicken.jpeg",
+		altText: "A photo of a roasted chicken in a pan",
+		description: "Roasted chicken without all of the extra work",
 		ingredients: [
 			[1, "Cup", "Flour"],
 			[2, "Tbsp", "Baking Powder"],
@@ -110,9 +120,11 @@ let recipes = [
 		notes: "Makes approximately 8 pancakes if using a 1/4 cup measuring cup"
 	},
 	{
-		name: "Pancakes 6",
-		slug: "pancakes6",
-		imageName: "pancakes.jpg",
+		name: "Gingerbread Cookies",
+		slug: "gingerbread",
+		imageName: "gingerbread.jpeg",
+		altText: "A photo of stacks of gingerbread cookies",
+		description: "A Christmas tradition",
 		ingredients: [
 			[1, "Cup", "Flour"],
 			[2, "Tbsp", "Baking Powder"],
@@ -132,9 +144,11 @@ let recipes = [
 		notes: "Makes approximately 8 pancakes if using a 1/4 cup measuring cup"
 	},
 	{
-		name: "Pancakes 7",
-		slug: "pancakes 7",
-		imageName: "pancakes.jpg",
+		name: "Apple Pie",
+		slug: "applepie",
+		imageName: "pie.jpeg",
+		altText: "A photo of apple pie",
+		description: "Apple pie with a butter pastry crust",
 		ingredients: [
 			[1, "Cup", "Flour"],
 			[2, "Tbsp", "Baking Powder"],
@@ -154,9 +168,11 @@ let recipes = [
 		notes: "Makes approximately 8 pancakes if using a 1/4 cup measuring cup"
 	},
 	{
-		name: "Pancakes 8",
-		slug: "pancakes8",
-		imageName: "pancakes.jpg",
+		name: "Barbecued Back Ribs",
+		slug: "ribs",
+		imageName: "ribs.jpeg",
+		altText: "A photo of barbecued ribs",
+		description: "A less time-intensive version of back ribs",
 		ingredients: [
 			[1, "Cup", "Flour"],
 			[2, "Tbsp", "Baking Powder"],
