@@ -15,19 +15,9 @@ ReactDOM.render(
 			<Route path="/" element={<App />} >
 				<Route path="/" element={<Home />} />
 				<Route path="/recipes" element={<Recipes />}>
-					<Route
-						index
-						element={
-							<main style={{ padding: "1rem"}}>
-								<p>Pick a recipe!</p>
-							</main>
-						}/>
-					
 				</Route>
 				<Route path="/recipes/:recipeSlug" element={<Recipe />} />
-
 			</Route>
-
 		</Routes>
 	</BrowserRouter>,
 	rootElement

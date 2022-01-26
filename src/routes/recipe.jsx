@@ -15,9 +15,6 @@ export default function Recipe() {
 
 				<div className="bg-white border-2 rounded-lg py-6 shadow-lg shadow-gray-600">
 					
-
-					
-					
 					<img src={"../img/" + recipe.imageName} className="scale-90 " />
 					<h2 className="text-2xl py-4 font-semibold px-16">{recipe.name}</h2>
 					<h4 className="text-xl font-medium text-left px-24">Ingredients:</h4>
