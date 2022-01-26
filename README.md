@@ -8,4 +8,4 @@ To run this, you require an up-to-date install of npm.
 3. `npm install` to download and install all required dependencies
 3. `npm run dev` to run the application, which will be available at `http://localhost:3000/`
 
-To build for production run `vite build`
+To build for production run `npm run build`
