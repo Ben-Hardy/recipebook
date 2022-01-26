@@ -18,7 +18,7 @@ export default function Recipes() {
 							setSearchParams({});
 						}
 					}}
-					className=" mx-2 px-2 bg-gray-100 focus:bg-white text-left border-2 rounded-lg shadow-sm shadow-gray-600 focus:shadow-gray-900"
+					className=" mx-2 px-2 bg-gray-100 focus:bg-white text-left border-2 rounded-sm shadow-sm shadow-gray-600 focus:shadow-gray-900"
 				/>
 			</div>
 			<nav className={"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-8 my-8"}>
@@ -35,7 +35,7 @@ export default function Recipes() {
 					to={`/recipes/${recipe.slug}`}
 					key={recipe.slug}
 					>
-						<div className="bg-gray-100 hover:bg-white text-center border-2 rounded-lg pb-6 pt-2 shadow-lg shadow-gray-600 hover:shadow-gray-900 hover:scale-105">
+						<div className="bg-gray-100 hover:bg-white text-center border-2 rounded-sm pb-6 pt-2 shadow-lg shadow-gray-600 hover:shadow-gray-900 hover:scale-105">
 							<img src={"../img/" + recipe.imageName} className="scale-90" alt={recipe.altText}/>
 							<h2 className="text-2xl">{recipe.name}</h2>
 							<p className="px-2">{recipe.description}</p>

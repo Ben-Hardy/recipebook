@@ -1,5 +1,4 @@
 import { useParams, Link, useRoutes } from "react-router-dom";
-import NavBar from "../components/NavBar";
 import { getRecipe } from "../recipe_data";
 import '../index.css'
 
@@ -11,9 +10,9 @@ export default function Recipe() {
 	return (
 		<div className="h-full">
 			<div className="grid grid-cols-1 gap-8 px-8 my-8">
-				<Link to="/recipes" className="w-fit bg-gray-100 hover:bg-white py-4 px-8 rounded-lg shadow-lg shadow-gray-600 hover:shadow-gray-900 hover:scale-105">Go Back</Link>
+				<Link to="/recipes" className="w-fit bg-gray-100 hover:bg-white py-4 px-8 rounded-sm shadow-sm shadow-gray-600 hover:shadow-gray-900 hover:scale-105">Go Back</Link>
 
-				<div className="bg-white border-2 rounded-lg py-6 shadow-lg shadow-gray-600">
+				<div className="bg-white border-2 rounded-sm py-6 shadow-lg shadow-gray-600">
 					
 					<img src={"../img/" + recipe.imageName} className="scale-90 " />
 					<h2 className="text-2xl py-4 font-semibold px-16">{recipe.name}</h2>
