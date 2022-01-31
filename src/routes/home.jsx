@@ -29,8 +29,8 @@ export default function Home() {
 					to={`/recipes/${randomRecipe.slug}`}
 					key={randomRecipe.slug}
 					>
-						<div className="bg-gray-100 hover:bg-white text-center border-2 rounded-sm pb-6 pt-2 shadow-lg shadow-gray-600 hover:shadow-gray-900 hover:scale-105">
 							<img src={"../img/" + randomRecipe.imageName} className="scale-90" alt={randomRecipe.altText}/>
+						<div className="bg-gray-100 hover:bg-white text-center border-2 rounded-sm pb-6 pt-2 shadow-lg shadow-gray-600 hover:shadow-gray-900 hover:scale-105">
 							<h2 className="text-2xl">{randomRecipe.name}</h2>
 							<p className="px-2">{randomRecipe.description}</p>
 						</div>	
