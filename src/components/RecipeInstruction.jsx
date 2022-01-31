@@ -11,9 +11,12 @@ export default function RecipeInstruction(props) {
 
 	return (
 		<div>
-			<label className={ checked ? "text-justify text-gray-500 line-through " : "inline-block text-black "}>
+			<label>
 				<input type="checkbox" checked={checked} onChange={handleChange} className=""/>
-				{" "}{instruction}
+				{" "}
+				<text className={ checked ?"text-left text-gray-500 line-through " : "text-left text-black"}>
+					{props.counter + ". " + instruction}
+				</text>
 			</label>
 		</div>
 	)

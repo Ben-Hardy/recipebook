@@ -12,9 +12,11 @@ export default function RecipeItem(props) {
 
 	return (
 		<div>
-			<label className={ checked ?"text-left text-gray-500 line-through " : "text-left text-black"}>
+			<label >
+				<span></span>
 				<input type="checkbox" checked={checked} onChange={handleChange} className=""/>
-				{" "}{recipe_text}
+				{" "}
+				<text className={ checked ?"text-left text-gray-500 line-through " : "text-left text-black"}>{recipe_text}</text>
 			</label>
 		</div>
 	)

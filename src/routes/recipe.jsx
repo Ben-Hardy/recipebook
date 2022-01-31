@@ -30,8 +30,8 @@ export default function Recipe() {
 					
 					<ol className="pb-8 pt-4">
 						{recipe.steps.map( step => (
-							<li key={counter++} className="text-left sm:px-16 md:px-16 lg:px-32 py-2">
-								<RecipeInstruction instruction={step}/>
+							<li key={counter} className="text-left sm:px-16 md:px-16 lg:px-32 py-2">
+								<RecipeInstruction instruction={step} counter={counter++}/>
 							</li>
 						))}
 					</ol>
