@@ -12,10 +12,10 @@ export default function Recipe() {
 	return (
 		<div className="h-full">
 			<div className="grid grid-cols-1 gap-8 px-8 my-8">
-				<Link to="/recipes" className="w-fit bg-gray-100 hover:bg-white py-4 px-8 rounded-sm shadow-sm shadow-gray-600 hover:shadow-gray-900 hover:scale-105">Go Back</Link>
+				<Link to="/recipebook/recipes" className="w-fit bg-gray-100 hover:bg-white py-4 px-8 rounded-sm shadow-sm shadow-gray-600 hover:shadow-gray-900 hover:scale-105">Go Back</Link>
 
-				<div className="bg-white border-2 rounded-sm py-6 shadow-lg shadow-gray-600">
-					<img src={"../img/" + recipe.imageName} className="scale-90 " />
+				<div className="bg-white rounded-sm py-6 shadow-lg shadow-gray-600 px-8">
+					<img src={"../../img/" + recipe.imageName} className="px-16 py-8" />
 					<h2 className="text-2xl py-4 font-semibold px-16">{recipe.name}</h2>
 					<h4 className="text-xl font-medium text-left sm:px-8 lg:px-24">Ingredients:</h4>
 					<ul className="pb-8 pt-4  grid sm:grid-cols-1 lg:grid-cols-2">

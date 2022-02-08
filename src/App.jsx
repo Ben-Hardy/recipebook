@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 
 export default function App() {
 	return (
-		<div className=" bg-gray-300 font-mono"
+		<div className=" bg-gray-200 font-mono"
 		>
 			<NavBar />
 			<Outlet />
