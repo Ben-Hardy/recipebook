@@ -7,7 +7,7 @@ export default function Recipes() {
 
 	return (
 		<div className="">
-			<div className="my-8 bg-gray-300 text-center text-gray-600">
+			<div className="my-8 bg-gray-200 text-center text-gray-600">
 				Search for a recipe:
 				<input value={searchParams.get("filter") || ""}
 					onChange={event => {
@@ -32,10 +32,10 @@ export default function Recipes() {
 				})
 				.map(recipe => (
 					<NavLink 
-					to={`/recipes/${recipe.slug}`}
+					to={`/recipebook/recipes/${recipe.slug}`}
 					key={recipe.slug}
 					>
-						<div className="bg-gray-100 hover:bg-white text-center border-2 rounded-sm pb-6 pt-2 shadow-lg shadow-gray-600 hover:shadow-gray-900 hover:scale-105">
+						<div className="bg-gray-100 hover:bg-white text-center rounded-sm pb-6 pt-2 shadow-lg shadow-gray-600 hover:shadow-gray-900 hover:scale-105">
 							<img src={"../img/" + recipe.imageName} className="scale-90" alt={recipe.altText}/>
 							<h2 className="text-2xl">{recipe.name}</h2>
 							<p className="px-2">{recipe.description}</p>
