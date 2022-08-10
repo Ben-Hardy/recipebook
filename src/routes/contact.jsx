@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 
 
 export default function Contact() {
-	const sectionHeading = "text-xl py-4 font-medium 2xl:text-4xl";
+	const sectionHeading = "text-xl py-4 font-medium xl:text-2xl";
 	const links = "text-gray-500 dark:text-gray-400";
 
 	return (
@@ -12,11 +12,13 @@ export default function Contact() {
 				<nav className=" flex flex-wrap items-center justify-between py-4 border-b mx-8 md:mx-16">
 					<div className="container-fluid w-full flex flex-wrap items-center justify-between px-6">
 						<Link to="/">
-							<h1 className="text-4xl 2xl:text-6xl hover:font-medium">Ben Hardy</h1>
+							<h1 className="text-4xl hover:font-medium">Ben Hardy</h1>
 						</Link>
-						<Link to="/contact">
-							<p className="text-xl hover:font-semibold">Contact</p>
-						</Link>
+						<div className="text-lg ">
+							<Link to="/">
+								<p className="text-xl hover:font-semibold px-2">Home</p>
+							</Link>
+						</div>
 					</div>	
 				</nav>	
 			</header>

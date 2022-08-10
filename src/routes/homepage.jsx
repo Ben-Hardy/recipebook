@@ -14,13 +14,17 @@ export default function Homepage() {
 						<Link to="/">
 							<h1 className="text-4xl hover:font-medium">Ben Hardy</h1>
 						</Link>
-						<div className="text-lg hover:font-semibold">
-						<Link to="/contact" className="px-2">
+						<div className="text-lg ">
+						<Link to="/contact" className="px-2 hover:font-semibold">
 							Contact
 						</Link>
 						{"  "}
-						<Link to="/recipebook" className="px-2">
+						<Link to="/recipebook" className="px-2 hover:font-semibold">
 							RecipeBook
+						</Link>
+						{"  "}
+						<Link to="/portfolio" className="px-2 hover:font-semibold">
+							Portfolio
 						</Link>
 						</div>
 					</div>	
